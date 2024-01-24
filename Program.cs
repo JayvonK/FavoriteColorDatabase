@@ -1,4 +1,5 @@
 using FavoriteColorDatabase.Data;
+using FavoriteColorDatabase.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -14,6 +15,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IFavColor, FavColor>();
 
 var app = builder.Build();
 
