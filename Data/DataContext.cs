@@ -10,5 +10,5 @@ namespace FavoriteColorDatabase.Data;
             
         }
 
-        public DbSet<FavoriteColor> Color { get; set; } 
+        public DbSet<FavoriteColor> FavoriteColors { get; set; } 
     }
